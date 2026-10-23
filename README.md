@@ -1,11 +1,13 @@
 # vsplit_asm.nvim
 
-Compile the current C file, link it into a flat image, and open the
+Compile the current c/c++ file, link it into a flat image, and open the
 disassembly in a vertical split, jumping to the function under your cursor.
 
 Undefined externals (`printf`, `mmap`, ...) are given 0x10-byte stub slots by a
 generated linker script, so any single object file links and `call` targets
 show up as readable `<printf>` labels.
+
+![Demo](show.gif)
 
 ## Requirements
 
